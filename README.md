@@ -1,2 +1,1 @@
-# safarioutfitters
-safari website
+# safari outfitters
