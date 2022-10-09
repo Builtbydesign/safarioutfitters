@@ -1,5 +1,3 @@
-#home
-
 #wild locations
 
 1. [Simanjiro / Maasai Steppe](#!simanjiro)
