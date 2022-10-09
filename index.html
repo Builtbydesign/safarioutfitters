@@ -21,20 +21,21 @@
 	}
 	body {width: 100%; height: 100vh; font-family: 'din'; font-size: 30px;
   		background: transparent url('sm-logo.svg') right 30px no-repeat;
-
+    pointer-events: auto;
 	}
-	body, html {background-color: #222; color: #fff;}
-	a {text-decoration: none; color: #ccc;}
+	body, html {background-color: #b0aa9a; color: #1a181c;}
+	a {text-decoration: none; color: #1a181c;}
 	#nav {position: absolute; top: 0px; right: 8px;
 		padding: 20px;}
 	#nav {padding: 12px;}
 	#content {display: block; padding: 30px; margin-top: 40px;}
-	#textbox {display: none; padding: 30px; margin-top: 30px;
+	#textbox {display: block; padding: 30px; margin-top: 30px;
 		background: rgba(0,0,0,0.1);}
-	.home #textbox {display: block;}
+	#textbox.on {display: block;}
+	#textbox.off {display: none;}
 	ol {margin-left: 20px;}
 	#nav a {margin: 0 8px; cursor: pointer !important; }
-	#nav a:hover {color: orange;}
+	#nav a:hover, ol li a:hover {color: #28133d; cursor: pointer;}
 
 
 </style>
@@ -83,28 +84,28 @@
 			run(docs)
 			document.body.className = e.target.id;
 			document.getElementById('textbox').innerHTML = '';
+			document.getElementById('textbox').className = 'off';
 		}
 	});
 
 
-// 
-function sethome() {
-	let reference = document.getElementById('locations');
-	let next = reference.nextElementSibling;
-	
-	//
-	next.addEventListener("click",function(e) { 
-		if(e.target && e.target.nodeName == "A") {
-			e.preventDefault();
-			var hashval = e.target.href.match(/#([\s\S]*)$/)[1];
-			var hash = hashval.substring(1);
-			console.log(hash);
-			fill(hash)
-
-		}
-	});
-}
-
+	// home page
+	function sethome() {
+		let reference = document.getElementById('wild-locations');
+		let next = reference.nextElementSibling;
+		
+		//
+		next.addEventListener("click",function(e) { 
+			if(e.target && e.target.nodeName == "A") {
+				e.preventDefault();
+				document.getElementById('textbox').className = 'on';
+				var hashval = e.target.href.match(/#([\s\S]*)$/)[1];
+				var hash = hashval.substring(1);
+				console.log(hash);
+				fill(hash)
+			}
+		});
+	}
 
 
 	// start <<<<<<<<<<<
@@ -115,6 +116,7 @@ function sethome() {
 		run(hash+'.md');
 		history.replaceState(undefined, undefined, "#!"+hash)
 	} else {
+		document.body.className = 'home';
 		run('home.md');
 	}
 
