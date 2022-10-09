@@ -1,6 +1,6 @@
 #home
 
-#locations
+#wild locations
 
 1. [Simanjiro / Maasai Steppe](#!simanjiro)
 2. [Zagara Falls](#!zagara_falls)
@@ -9,4 +9,3 @@
 5. [Lake Natron / Oldonyo Lengai](#!natron)
 6. [Pangani Beach](#!pangani)
 7. [Lake Eyasi - Hadzabe](#!eyasi)
-8. [Sinya](#!sinya) 
