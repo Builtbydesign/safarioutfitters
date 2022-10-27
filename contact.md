@@ -1,3 +1,4 @@
 #contact
 
-this is the contact page
+contact@safarioutfitters.net
+(+255) 745 520 142
