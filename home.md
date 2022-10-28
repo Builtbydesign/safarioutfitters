@@ -7,4 +7,3 @@
 5. [Lake Natron / Oldonyo Lengai](#!natron)
 6. [Pangani Beach](#!pangani)
 7. [Lake Eyasi - Hadzabe](#!eyasi)
-8. [Sinya](#!sinya) 
