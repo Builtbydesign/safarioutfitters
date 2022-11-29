@@ -6,3 +6,5 @@
 		<img src="img/community.jpg" alt="community">
 	</a>
 </p>
+
+<p>Click to view</p>
