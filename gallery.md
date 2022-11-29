@@ -6,3 +6,5 @@
 		<img src="img/gallery2.jpg" alt="safaris - flamingos">
 	</a>
 </p>
+
+<p>Click to view</p>
