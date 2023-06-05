@@ -7,4 +7,5 @@
 5. [Lake Natron / Oldonyo Lengai](#!natron)
 6. [Pangani Beach](#!pangani)
 7. [Lake Eyasi - Hadzabe](#!eyasi)
-8. [Serengeti, ngorongoro](#!serengeti-ngorongoro)
+8. [Serengeti](#!serengeti)
+9. [Ngorongoro](#!ngorongoro)
