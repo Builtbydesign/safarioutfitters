@@ -1,3 +1,0 @@
-##SINYA
-
-text
