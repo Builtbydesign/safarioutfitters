@@ -11,30 +11,28 @@
 		url('font/din-condensed-bold.ttf') format('truetype');
 	} 
 	a {cursor: pointer;}
-	* {margin: 0; padding: 0; }
-
+	* {margin: 0; padding: 0;}
+	html {background: #b0aa9a url('logo-min.svg') center center no-repeat;
+  		background-attachment: fixed;}
 	html, body {
 		scroll-behavior: smooth;
 		user-select:none;
+		color: #1a181c;
 	}
 	ul, ol {list-style-type: none;}
-	html, body {background: #b0aa9a; color: #1a181c;}
 	body {width: 100%; height: 100vh; font-family: 'din'; font-size: 30px;
-  		background: transparent url('logo-min.svg') center center no-repeat;
-  		background-attachment: fixed;
     	pointer-events: auto;}
 	a {text-decoration: none; color: #1a181c;}
 	#nav {position: absolute; top: 8px; right: 16px;
 	margin: 0; padding: 0;}
-	/*#nav {padding: 12px;}*/
 	#nav a {margin: 0 8px;}
 	#nav a:hover, ol li a:hover {color: #fff;}
-
-	/* content */
-	/*#content {position: absolute;}*/
-	#content, #textbox {display: block;
+	#content, #textbox {
+		display: block;
 		width: 80%;
-		clear: both; margin:  0 auto;}
+		clear: both; 
+		margin:  0 auto;
+	}
 	#content {display: block; padding: 30px; }
 	#textbox {display: block; padding: 30px; }
 
@@ -44,20 +42,19 @@
 	#content p, #content h1, #content h2, #content h3, 
 	#textbox p, #textbox h1, #textbox h2, #textbox h3
 	 {margin-bottom: 1em;}
-
 	#content img {max-width: 500px; display: block;}
-		
-	/* homepage locations list */
+
 	#content ol li {
-		display: inline; float: left; 
+		display: inline; 
+		float: left; 
 		padding: 0; 		
 		margin: 4px 4px 1em 4px;
 	}
-	
 	#content ol li a {
 		display: inline-block;
 		padding: 10px;
-		width: 220px; height: 180px;
+		width: 220px; 
+		height: 180px;
 		font-size: 22px;
 		text-align: center;
 		text-shadow: 0 0 5px rgba(255,255,255,0.4);	
@@ -66,8 +63,6 @@
 		z-index: 1;
 		padding-bottom: 1em;
 	}
-
-
 	#content ol li:before {
 		content: '';
 		display: block;
@@ -77,13 +72,11 @@
 		height: 200px;
 		box-shadow: 0 0 15px rgba(0,0,0,0.1);
 		border-radius: 100%;
-		margin-top:1.5em; 
+		margin:40px 20px 20px 20px; 
 	}
-
 	#content ol li:hover:before {
 		box-shadow: 0 0 15px rgba(255,255,255,0.7);
 	}
-
 	#content ol li:nth-child(1):before {
 		background: url('img/simanjiro.jpg'); 
 		background-size:cover;
@@ -133,8 +126,8 @@
 		background: url('img/self-drive.jpg'); 
 		background-size:cover;
 		background-repeat: no-repeat;
-	}
-	</style>
+	}	
+</style>
 </head>
 <body>
 
