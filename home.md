@@ -9,3 +9,4 @@
 7. [Lake Eyasi - Hadzabe](#!eyasi)
 8. [Serengeti](#!serengeti)
 9. [Ngorongoro](#!ngorongoro)
+9. [Self-drive](#!self-drive)
